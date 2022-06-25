@@ -35,6 +35,16 @@ public class AlunosEntity {
     @Column
     private Turno turno;
 
+    public AlunosEntity( String nome, Integer idade, String cpf, String telefone, String endereco, Turno turno) {
+        this.id = getId();
+        this.idade = idade;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.turno = turno;
+    }
+
 }
 
 
